@@ -1,0 +1,127 @@
+#include<iostream>
+using namespace std;
+int game(int score)
+{
+char ans;
+cout<<endl;
+cout<<"********************************************"<<endl;
+cout<<"Question 1 : "<<endl;
+cout<<"A desktop computer is also known as "<<endl;
+cout<<" a) PC "<<endl;
+cout<<" b) Laptop"<<endl;
+cout<<" c) Mainframe"<<endl;
+cout<<" d) Palmtop"<<endl;
+cout<<"Your answer please : ";
+cin>>ans;
+if (ans == 'a')
+score+=2;
+cout<<"********************************************";
+cout<<endl;
+
+cout<<endl;
+cout<<"********************************************"<<endl;
+cout<<"Question 2 : "<<endl;
+cout<<"Which processing is used in mainframe computer ? "<<endl;
+cout<<" a) Parallel "<<endl;
+cout<<" b) Batch"<<endl;
+cout<<" c) Serial"<<endl;
+cout<<" d) Toggle"<<endl;
+cout<<"Your answer please : ";
+cin>>ans;
+if (ans == 'b')
+score+=2;
+cout<<"********************************************";
+cout<<endl;
+
+cout<<endl;
+cout<<"********************************************"<<endl;
+cout<<"Question 3 : "<<endl;
+cout<<"Abacus was developed by"<<endl;
+cout<<" a) China "<<endl;
+cout<<" b) India"<<endl;
+cout<<" c) America"<<endl;
+cout<<" d) Germany"<<endl;
+cout<<"Your answer please : ";
+cin>>ans;
+if (ans == 'a')
+score+=2;
+cout<<"********************************************";
+cout<<endl;
+
+
+cout<<endl;
+cout<<"********************************************"<<endl;
+cout<<"Question 4 : "<<endl;
+cout<<"Numeric pad is in the"<<endl;
+cout<<" a) Speaker "<<endl;
+cout<<" b) Keyboard"<<endl;
+cout<<" c) Mouse"<<endl;
+cout<<" d) Monitor"<<endl;
+cout<<"Your answer please : ";
+cin>>ans;
+if (ans == 'b')
+score+=2;
+cout<<"********************************************";
+cout<<endl;
+
+cout<<endl;
+cout<<"********************************************"<<endl;
+cout<<"Question 5 : "<<endl;
+cout<<"Pascaline is also known as"<<endl;
+cout<<" a) mechanical machine "<<endl;
+cout<<" b) division machine "<<endl;
+cout<<" c) adding machine "<<endl;
+cout<<" d) different machine "<<endl;
+cout<<"Your answer please : ";
+cin>>ans;
+if (ans == 'c')
+score+=2;
+cout<<"********************************************";
+cout<<endl;
+
+return score;
+}
+int main()
+{
+cout<<" ********************"<<endl;
+cout<<" Quiz"<<endl;
+cout<<" ********************"<<endl;
+cout<<endl<<endl;
+cout<<"Rules for the quiz are : "<<endl;
+cout<<"1. Questions will be provided with four answer options "<<endl;
+cout<<"2. You are to choose only option and press Enter"<<endl;
+cout<<"3. Each correct answer will give you 2 points"<<endl;
+cout<<"4. No negative markings for wrong answers "<<endl;
+cout<<"5. Totally you will be provided with a set of five questions "<<endl;
+cout<<"Important Note : "<<endl;
+cout<<" If you give a wrong option or any other option that "<<endl;
+cout<<" a,b,c,d, then your answer is considered to be wrong "<<endl;
+cout<<endl<<"OK, Let's start the game....!"<<endl;
+cout<<"Get ready ! "<<endl;
+cout<<"************************************************************************";
+int ch=1;
+int score = 0;
+while(ch!=3)
+{
+cout<<endl;
+cout<<"Menu : "<<endl;
+cout<<"1. Start the game "<<endl;
+cout<<"2. View Scores "<<endl;
+cout<<"3. Exit "<<endl;
+cout<<"Choose any one "<<endl;
+cin>>ch;
+switch(ch)
+{
+case 1:
+score = game(score);
+break;
+case 2:
+cout<<"Your total score is "<<score<<endl;
+break;
+case 3:
+exit(0);
+case 4:
+cout<<"Wrong choice "<<endl;
+}
+}
+}
